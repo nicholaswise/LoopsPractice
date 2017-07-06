@@ -23,6 +23,18 @@ namespace LoopsPractice
             //Looks like this:
             //for(initializer; condition; updater)
             //{ do something }
+
+            //int i;
+            for (int i = 15; i > 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+
+            for (int i = 50; i <= 100; i++)
+            {
+                Console.WriteLine(i);
+            }
+
         }
     }
 }
