@@ -54,26 +54,56 @@ namespace LoopsPractice
             //Add the product (multiplication) of 1 through 10 using a For loop
             //Print the product to the screen
 
-            string[] days = { "Monday", "Tuesday", "Wednesday" };
-            for (int i = 0; i < days.Length; i++)
-            {
-                Console.WriteLine(days[i]);
-            }
+            //string[] days = { "Monday", "Tuesday", "Wednesday" };
+            //for (int i = 0; i < days.Length; i++)
+            //{
+            //    Console.WriteLine(days[i]);
+            //}
 
-            string story = "Once upon a time...";
-            string[] storyWords = story.Split();
-            Array.Reverse(storyWords);
-            for (int i=0; i < storyWords.Length; i++)
-            {
-                Console.WriteLine(storyWords[i]);
-            }
+            //string story = "Once upon a time...";
+            //string[] storyWords = story.Split();
+            //Array.Reverse(storyWords);
+            //for (int i=0; i < storyWords.Length; i++)
+            //{
+            //    Console.WriteLine(storyWords[i]);
+            //}
 
-            int product = 1;
-            for (int i = 1; i <= 10; i++)
+            //int product = 1;
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    product = (product * i);
+            //}
+            //    Console.WriteLine(product);
+
+            //Foreach loop - used to iterate over a collection (ex. list or array)
+            //you can think of the structure of a foreach loop as the statement:
+            //for each item in the collection, do something
+            // for each(dataType variable in collection)
+            // * {
+            // * do something
+            // * }
+            //int[] studentGrades={4,4,3,4,3};
+            //foreach(int grade in studentGrades)
+            //{ Console.WriteLine(grade);}
+
+            string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
+            //Always start with the keyword foreach
+            foreach(string month in firstMonths)
             {
-                product = (product * i);
+                Console.WriteLine(month);
             }
-                Console.WriteLine(product);
+            //foreach loops allow the temporary variable to "know" to assign itself to each
+            //element in the collection(like an array), one at at time.
+
+            //create an array of 6 musicians(bands or solo artists) using using a foreach loop
+            //print each musicians name
+
+            string[] musicians = { "Beach Boys", "Beach House", "Beach Fossils", "Dirty Beaches", "Beach Stav", "Meatloaf" };
+            foreach(string bands in musicians)
+            {
+                Console.WriteLine(bands);
+            }
+        
             
 
 
