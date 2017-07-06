@@ -86,24 +86,36 @@ namespace LoopsPractice
             //foreach(int grade in studentGrades)
             //{ Console.WriteLine(grade);}
 
-            string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
-            //Always start with the keyword foreach
-            foreach(string month in firstMonths)
-            {
-                Console.WriteLine(month);
-            }
-            //foreach loops allow the temporary variable to "know" to assign itself to each
-            //element in the collection(like an array), one at at time.
+            //string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
+            ////Always start with the keyword foreach
+            //foreach(string month in firstMonths)
+            //{
+            //    Console.WriteLine(month);
+            //}
+            ////foreach loops allow the temporary variable to "know" to assign itself to each
+            ////element in the collection(like an array), one at at time.
 
-            //create an array of 6 musicians(bands or solo artists) using using a foreach loop
-            //print each musicians name
+            ////create an array of 6 musicians(bands or solo artists) using using a foreach loop
+            ////print each musicians name
 
-            string[] musicians = { "Beach Boys", "Beach House", "Beach Fossils", "Dirty Beaches", "Beach Stav", "Meatloaf" };
-            foreach(string bands in musicians)
+            //string[] musicians = { "Beach Boys", "Beach House", "Beach Fossils", "Dirty Beaches", "Beach Stav", "Meatloaf" };
+            //foreach(string bands in musicians)
+            //{
+            //    Console.WriteLine(bands);
+            //}
+
+            //WHILE LOOPS only run when a certain condition is met
+            //While something is TRUE, do this thing.
+
+            Console.WriteLine("What is your first name?");
+            string firstName = Console.ReadLine();
+            while (firstName.ToUpper() == "NICK")
             {
-                Console.WriteLine(bands);
+                Console.WriteLine("You're amazing!");
+                break;
             }
-        
+
+            
             
 
 
