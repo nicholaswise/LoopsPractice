@@ -142,23 +142,57 @@ namespace LoopsPractice
             //Ask the user if they have another class they would like to add to their GPA calculation
             //Using a do-while loop, repeat the code if the user says "YES"
 
-            string className;
-            string letterGrade;
-            string anotherClass;
-            do
+            //string className;
+            //string letterGrade;
+            //string anotherClass;
+            //do
+            //{
+            //    Console.WriteLine("Which class would you like to add to your GPA? ");
+            //    className = Console.ReadLine();
+            //    Console.WriteLine("What is your grade? ");
+            //    letterGrade = Console.ReadLine();
+            //    Console.WriteLine("Do you have another class that you would like to add? ");
+            //    anotherClass = Console.ReadLine();
+            //}
+            //while (anotherClass.ToUpper() == "YES");
+
+            //NESTED LOOPS
+            //Loop inside of another loop
+            //The inner loop is executed more times than the outer loop
+            //Example: Clock
+
+            //Create a nested loop structure that prints:
+            //1234
+            //1234
+
+            //for (int rows = 1; rows <= 2; rows++) 
+            //{
+            //    for (int columns = 1; columns <= 4; columns++) 
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Print a triangle
+            //Outer loop will go line by line
+            //The inner loop will go over different elements in the line.
+            //Result:
+            //1
+            //12
+            //123
+            //1234
+
+            //RESULT
+            for (int rows = 1; rows <= 25; rows++)
             {
-                Console.WriteLine("Which class would you like to add to your GPA? ");
-                className = Console.ReadLine();
-                Console.WriteLine("What is your grade? ");
-                letterGrade = Console.ReadLine();
-                Console.WriteLine("Do you have another class that you would like to add? ");
-                anotherClass = Console.ReadLine();
-
-
+                for (int columns = 1; columns <= rows; columns++)
+                {
+                    Console.Write(columns);
+      
+                }
+                Console.WriteLine();
             }
-            while (anotherClass.ToUpper() == "YES");
-            
-            
 
 
 
