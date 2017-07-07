@@ -214,18 +214,46 @@ namespace LoopsPractice
             //    Console.WriteLine(i * i);
             //}
 
-            //4
-            Console.WriteLine("Please enter your favorite weekend activity.");
-            string userResponse = Console.ReadLine();
-            int vowels = 0;
-            foreach (char letter in userResponse)
-            {
-                if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
-                {
-                    vowels += 1;
-                }
-            }
-            Console.WriteLine(vowels);
+            ////4
+            //Console.WriteLine("Please enter your favorite weekend activity.");
+            //string userResponse = Console.ReadLine();
+            //int vowels = 0;
+            //foreach (char letter in userResponse)
+            //{
+            //    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+            //    {
+            //        vowels += 1;
+            //    }
+            //}
+            //Console.WriteLine(vowels);
+            ////Different way
+            //string[] faveMovies = { "Star Wars", "Anchorman", "Avatar", "Serenity", "Super Troopers" };
+            //foreach (string movie in faveMovies)
+            //{
+            //    if (movie.StartsWith("A"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("E"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("I"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("O"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("U"))
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(movie);
+            //    }
 
             ////5
             ////FOR Loop
@@ -267,7 +295,31 @@ namespace LoopsPractice
             //    Console.WriteLine();
             //}
 
+            //I need to ask the user for an integer, and get the input, and save it
+            //"Evenly divisible" is a good indicator of modulus
+            //We have to check if the input % 3 ==0
+            //We need a conditional and if the input % 3==0 we need to write "You won!"
+            //then exit the loop
+            //if their input % 3 does not equal 0, let them know, "You lost"
+            //and ask for another integer. we repeat this until they win.
 
+            Console.WriteLine("Please enter an integer (whole number).");
+            int userNum = int.Parse(Console.ReadLine());
+
+            for (int i=1; i <= userNum; i++)
+            {
+                if (i %3 == 0)
+                {
+                    Console.WriteLine("You won!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("You lost!");
+                    Console.WriteLine("Please enter another integer");
+
+                }
+            }
 
 
 
@@ -285,3 +337,4 @@ namespace LoopsPractice
         }
     }
 }
+
