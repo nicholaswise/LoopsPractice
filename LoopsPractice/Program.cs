@@ -183,7 +183,7 @@ namespace LoopsPractice
             //123
             //1234
 
-            //RESULT
+            ////RESULT
             //for (int rows = 1; rows <= 25; rows++)
             //{
             //    for (int columns = 1; columns <= rows; columns++)
@@ -215,36 +215,65 @@ namespace LoopsPractice
             //}
 
             //4
-            //Console.WriteLine("Please enter your favorite weekend activity.");
-            //string userResponse = Console.ReadLine();
-            //int vowels = 0;
-            //foreach (char letter in userResponse)
+            Console.WriteLine("Please enter your favorite weekend activity.");
+            string userResponse = Console.ReadLine();
+            int vowels = 0;
+            foreach (char letter in userResponse)
+            {
+                if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+                {
+                    vowels += 1;
+                }
+            }
+            Console.WriteLine(vowels);
+
+            ////5
+            ////FOR Loop
+            //int[] tenNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //for(int i = 1; i <= 10; i++)
             //{
-            //    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
-            //    {
-            //        vowels += 1;
-            //    }
+            //    Console.WriteLine(i);
             //}
-            //Console.WriteLine(vowels);
+            ////FOR EACH Loop
+            //int[] tenNumbers2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //foreach(int numbers in tenNumbers2)
+            //{
+            //    Console.WriteLine(numbers);
+            //}
 
-            //5
-            //FOR Loop
-            int[] tenNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            for(int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine(i);
-            }
-            //FOR EACH Loop
-            int[] tenNumbers2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            foreach(int numbers in tenNumbers2)
-            {
-                Console.WriteLine(numbers);
-            }
+            ////6
+            //string variableName = "This is a string";
+            //string[] variableSplit = variableName.Split();
+            //for (int i = 0; i < variableSplit.Length; i++)
+            //{
+            //    Console.WriteLine(variableSplit[i]);
+            //}
 
-            //6
+            //MULTIPLICATION TABLE
+
+            //int multNum = 1;
+            //Console.WriteLine("Enter in your first number: ");
+            //int firstNumber = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter in your second number: ");
+            //int secondNumber = int.Parse(Console.ReadLine());
+            //for (int i=1; i<=firstNumber; i++)
+            //{
+            //    for (int j = 1; j <= secondNumber; j++)
+            //    {
+            //        Console.Write(multNum * j + " ");
+
+            //    }
+            //    multNum += 1;
+            //    Console.WriteLine();
+            //}
 
 
-            
+
+
+
+
+
+
 
 
 
