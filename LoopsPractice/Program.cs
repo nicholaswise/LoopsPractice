@@ -75,31 +75,31 @@ namespace LoopsPractice
             //}
             //    Console.WriteLine(product);
 
-            //Foreach loop - used to iterate over a collection (ex. list or array)
+            //Foreach loop -used to iterate over a collection(ex.list or array)
             //you can think of the structure of a foreach loop as the statement:
             //for each item in the collection, do something
             // for each(dataType variable in collection)
             // * {
-            // * do something
-            // * }
-            //int[] studentGrades={4,4,3,4,3};
-            //foreach(int grade in studentGrades)
-            //{ Console.WriteLine(grade);}
+            //    * do something
+            //    * }
+            //int[] studentGrades = { 4, 4, 3, 4, 3 };
+            //foreach (int grade in studentGrades)
+            //{ Console.WriteLine(grade); }
 
             //string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
             ////Always start with the keyword foreach
-            //foreach(string month in firstMonths)
+            //foreach (string month in firstMonths)
             //{
             //    Console.WriteLine(month);
             //}
-            ////foreach loops allow the temporary variable to "know" to assign itself to each
-            ////element in the collection(like an array), one at at time.
+            //foreach loops allow the temporary variable to "know" to assign itself to each
+            //element in the collection(like an array), one at at time.
 
             ////create an array of 6 musicians(bands or solo artists) using using a foreach loop
             ////print each musicians name
 
             //string[] musicians = { "Beach Boys", "Beach House", "Beach Fossils", "Dirty Beaches", "Beach Stav", "Meatloaf" };
-            //foreach(string bands in musicians)
+            //foreach (string bands in musicians)
             //{
             //    Console.WriteLine(bands);
             //}
@@ -184,15 +184,71 @@ namespace LoopsPractice
             //1234
 
             //RESULT
-            for (int rows = 1; rows <= 25; rows++)
+            //for (int rows = 1; rows <= 25; rows++)
+            //{
+            //    for (int columns = 1; columns <= rows; columns++)
+            //    {
+            //        Console.Write(columns);
+
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //PRACTICE PROBLEMS
+
+            ////1
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine("Hello world.");
+            //}
+
+            ////2
+            //for (int i = 0; i <= 100; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            ////3
+            //for (int i = 1; i <= 20; i++)
+            //{
+            //    Console.WriteLine(i * i);
+            //}
+
+            //4
+            //Console.WriteLine("Please enter your favorite weekend activity.");
+            //string userResponse = Console.ReadLine();
+            //int vowels = 0;
+            //foreach (char letter in userResponse)
+            //{
+            //    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+            //    {
+            //        vowels += 1;
+            //    }
+            //}
+            //Console.WriteLine(vowels);
+
+            //5
+            //FOR Loop
+            int[] tenNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            for(int i = 1; i <= 10; i++)
             {
-                for (int columns = 1; columns <= rows; columns++)
-                {
-                    Console.Write(columns);
-      
-                }
-                Console.WriteLine();
+                Console.WriteLine(i);
             }
+            //FOR EACH Loop
+            int[] tenNumbers2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            foreach(int numbers in tenNumbers2)
+            {
+                Console.WriteLine(numbers);
+            }
+
+            //6
+
+
+            
+
+
+
+
 
 
 
